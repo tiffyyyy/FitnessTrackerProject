@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 // Fitness Tracker for Cardiovascular Exercises
 
-Practitioner prac = new Practitioner("Tiffany Andrade", 47, 1.49, 20);
+User prac = new User("Tiffany Andrade", 47, 1.49, 20);
 Food a = new Food("Chocolate Milk", 208);
 Food b = new Food("White Beans", 249);
 Food c = new Food("Sweet Potato", 118);
