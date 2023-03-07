@@ -12,6 +12,7 @@ namespace FitnessTrackerProject
         public int Weight { get; set; }
         public double Height { get; set; }
         public int Age { get; set; }
+        public CalculateCalories? CalculateCalories { get; set; }
 
 
         public Practitioner(String name, int weight, double height, int age)
