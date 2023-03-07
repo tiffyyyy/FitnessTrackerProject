@@ -11,6 +11,7 @@ namespace FitnessTrackerProject
     {
         public string FoodName { get; set; }    
         public int CaloriesPerServing { get; set; }
+        public CalculateCalories? CalculateCalories { get; set; }
         public Food(string foodName, int caloriesPerServing)  
         {
             this.FoodName = foodName;
