@@ -23,6 +23,14 @@ namespace FitnessTrackerProject
             Intensity = intensity;
         }
 
+        public Workout(string? type, int numberOfDays, string duration, Intensity intensity)
+        {
+            Type = type;
+            NumberOfDays = numberOfDays;
+            Duration = duration;
+            Intensity = intensity;
+        }
+
         public override string ToString()
         {
             return "Type of Workout: " + Type + "\n" + "Number of Day/s: " + NumberOfDays + "\n" + "Time Duration(minute/s): " + Duration +
