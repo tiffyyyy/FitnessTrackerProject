@@ -9,17 +9,17 @@ namespace FitnessTrackerProject
 {
     internal class Food
     {
-        public string Name { get; set; }    
+        public string FoodName { get; set; }    
         public int CaloriesPerServing { get; set; }
-        public Food(string name, int caloriesPerServing)
+        public Food(string foodName, int caloriesPerServing)  
         {
-            this.Name = name;
+            this.FoodName = foodName;
             this.CaloriesPerServing = caloriesPerServing;
         }
 
             public override string ToString()
         {
-            return "Food Intake: " + Name + "\n" + "Food Calories: " + CaloriesPerServing + "\n";
+            return "Food Intake: " + FoodName + "\n" + "Food Calories: " + CaloriesPerServing + "\n";
         }
     }
 }

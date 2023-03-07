@@ -14,7 +14,7 @@ namespace FitnessTrackerProject
         public int CaloriesBurned { get; set; }
         public Intensity Intensity { get; set; }
 
-        public Workout(string? type, int NumberOfDays, string duration, int caloriesBurned, Intensity intensity)
+        public Workout(string? type, int NumberOfDays, string duration, int caloriesBurned, Intensity intensity) : base()
         {
             Type = type;
             this.NumberOfDays = NumberOfDays;
