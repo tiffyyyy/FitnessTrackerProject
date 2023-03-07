@@ -16,7 +16,7 @@ namespace FitnessTrackerProject
         public List<Workout>? Workouts { get; set; }
 
 
-        public User(String name, int weight, double height, int age, List<Food> food, CalculateCalories calculateCalories, List<Workout> workouts) 
+        public User(String name, int weight, double height, int age, List<Food> food, Calories calculateCalories, List<Workout> workouts) 
         {
             Name = name;
             this.Weight = weight;

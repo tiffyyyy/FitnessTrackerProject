@@ -10,11 +10,11 @@ namespace FitnessTrackerProject
     {
         public string? Type { get; set; }
         public int NumberOfDays { get; set; }
-        public string? Duration { get; set; }
+        public int Duration { get; set; }
         public int CaloriesBurned { get; set; }
         public Intensity Intensity { get; set; }
 
-        public Workout(string? type, int NumberOfDays, string duration, int caloriesBurned, Intensity intensity) : base()
+        public Workout(string? type, int NumberOfDays, int duration, int caloriesBurned, Intensity intensity) : base()
         {
             Type = type;
             this.NumberOfDays = NumberOfDays;
@@ -23,13 +23,15 @@ namespace FitnessTrackerProject
             Intensity = intensity;
         }
 
-        public Workout(string? type, int numberOfDays, string duration, Intensity intensity)
+        public Workout(string? type, int numberOfDays, int duration, Intensity intensity)
         {
             Type = type;
             NumberOfDays = numberOfDays;
             Duration = duration;
             Intensity = intensity;
         }
+
+ 
 
         public override string ToString()
         {

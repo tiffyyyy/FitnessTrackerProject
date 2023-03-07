@@ -11,11 +11,17 @@ namespace FitnessTrackerProject
     {
         public string FoodName { get; set; }    
         public int CaloriesPerServing { get; set; }
-        public CalculateCalories? CalculateCalories { get; set; }
+        public Calories? Calories { get; set; }
         public Food(string foodName, int caloriesPerServing)  
         {
             this.FoodName = foodName;
             this.CaloriesPerServing = caloriesPerServing;
+        }
+
+        public int FoodCalories(int caloriesPerServing)
+        {
+            CaloriesPerServing += this.CaloriesPerServing;
+            return CaloriesPerServing;
         }
 
             public override string ToString()
