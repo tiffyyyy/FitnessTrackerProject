@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FitnessTrackerProject
 {
-    internal class Practitioner
+    internal class User
     {
         public string Name { get; set; }
         public int Weight { get; set; }
@@ -15,7 +15,7 @@ namespace FitnessTrackerProject
         public CalculateCalories? CalculateCalories { get; set; }
 
 
-        public Practitioner(String name, int weight, double height, int age)
+        public User(String name, int weight, double height, int age)
         {
             Name = name;
             this.Weight = weight;
